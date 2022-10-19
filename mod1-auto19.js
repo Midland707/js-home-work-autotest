@@ -1,1 +1,23 @@
 //MODUL1 AUTOTEST19
+
+function checkPassword(password) {
+  const ADMIN_PASSWORD = "jqueryismyjam";
+  let message;
+
+  if (password === null) {
+    // Change this line
+    message = "Canceled by user!";
+  } else if (password === ADMIN_PASSWORD) {
+    // Change this line
+    message = "Welcome!";
+  } else {
+    message = "Access denied, wrong password!";
+  }
+  console.log(message);
+  return message;
+}
+
+checkPassword("mangohackzor");
+checkPassword(null);
+checkPassword("polyhax");
+checkPassword("jqueryismyjam");
